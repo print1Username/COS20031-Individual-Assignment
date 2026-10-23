@@ -49,21 +49,21 @@ google-generativeai
 Windows PowerShell：
 
 ```powershell
-python -m venv venv
+python -m venv .venv
 .\venv\Scripts\Activate.ps1
 ```
 
 Windows Command Prompt：
 
 ```bat
-python -m venv venv
+python -m venv .venv
 venv\Scripts\activate
 ```
 
 macOS 或 Linux：
 
 ```bash
-python3 -m venv venv
+python3 -m venv .venv
 source venv/bin/activate
 ```
 
