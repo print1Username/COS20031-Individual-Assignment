@@ -50,21 +50,21 @@ Windows PowerShell：
 
 ```powershell
 python -m venv .venv
-.\venv\Scripts\Activate.ps1
+.venv\Scripts\Activate.ps1
 ```
 
 Windows Command Prompt：
 
 ```bat
 python -m venv .venv
-venv\Scripts\activate
+.venv\Scripts\activate
 ```
 
 macOS 或 Linux：
 
 ```bash
 python3 -m venv .venv
-source venv/bin/activate
+source .venv/bin/activate
 ```
 
 ### 3. 安装依赖套件
