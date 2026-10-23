@@ -71,7 +71,7 @@ source .venv/bin/activate
 
 ```bash
 python -m pip install --upgrade pip
-python -m pip install Flask python-dotenv google-generativeai
+python -m pip install -r requirements.txt
 ```
 
 The current `requirements.txt` file is empty, so the packages above must be installed manually unless the dependency file is updated later.
