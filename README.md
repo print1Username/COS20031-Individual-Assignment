@@ -49,7 +49,7 @@ Open a terminal in the project root, the folder containing `app.py`.
 Windows PowerShell:
 
 ```powershell
-python -m venv venv
+python -m venv .venv
 .\venv\Scripts\Activate.ps1
 ```
 
