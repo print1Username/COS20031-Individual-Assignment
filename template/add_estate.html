@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <title>Add Estate</title>
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='icon.ico') }}">
+    </head>
+    <body>
+        <h1>Add New Estate</h1>
+        <form method="post">
+            <label for="name">Estate ID<b>*</b>:</label>
+            <input type="number" id="estate_id" name="estate_id", placeholder="Estate Id"/>
+
+            <br><br>
+
+            <label for="name">Estate Name<b>*</b>:</label>
+            <input type="text" id="estate_name" name="estate_name", placeholder="Estate Name"/>
+
+            <br><br>
+
+            <label for="name">Estate Description:</label>
+            <input type="text" id="estate_description" name="estate_description", placeholder="Estate Description"/>
+
+            <br><br>
+
+            <label for="price">Estate Price<b>*</b>:</label>
+            <input type="number" id="estate_price" name="estate_price", placeholder="Estate Price"/>
+            
+            <br><br>
+            <input type="submit" value="Create" />
+        </form>
+        <br>
+        <h3>{{ message }}</h3>
+        <br>
+        <a href="home">Back to Home page</a>
+    </body>
+</html>

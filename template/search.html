@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <title>Real Estate Search</title>
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='icon.ico') }}">
+    </head>
+    <body>
+        <h1>Real Estate Search</h1>
+        <form method="post">
+            <label for="name">Estate ID:</label>
+            <input type="number" id="estate_id" name="estate_id", placeholder="Search ID"/>
+            <input type="submit" value="Search" />
+        </form>
+        <br>
+
+        <table>
+            <tr>
+                <th>Estate ID</th>
+                <th>Estate Name</th>
+                <th>Estate Description</th>
+                <th>Estate Price (RM)</th>
+            </tr>
+            {% for estate in estate %}
+            <tr>
+                <td>{{ estate.Estate_ID }}</td>
+                <td>{{ estate.Estate_Name }}</td>
+                <td>{{ estate.Estate_Description }}</td>
+                <td>{{ estate.Estate_Price }}</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+
+        <br><br>
+        <a href="home">Back to Home page</a>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+body {
+    background-color:ghostwhite;
+    margin: 40px;
+    font-family: 'Roboto', Courier, monospace;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: rgb(100, 100, 100);
+}
+
+p {
+    color:darkblue;
+    font-size: 20px;
+    border-left: 5px dotted black;
+    padding-left: 20px;
+}
+
+a {
+    color:blue;
+    font-size: 25px;
+    border-left: 10px solid aqua;
+    margin-left: 50px;
+    padding-left: 15px;
+    transition-duration: 0.2s;
+}
+
+a:hover {
+    padding-left: 20px;
+    color:darkblue;
+}
+
+label {
+    font-size: 20px;
+    color: black;
+    margin:10px
+}
+
+input{
+    width:300px;
+    height:30px;
+    font-size: 20px;
+    padding:15px, 15px;
+}
+
+input[type=submit] {
+    width:90px;
+    height:50px;
+    border:none;
+    background-color:antiquewhite;
+    font-size: 17px;
+    text-transform: uppercase
+}
+
+input[type=submit]:hover {
+    background-color:bisque;
+
+}
+
+table {
+    font-size: 20px;
+}
+
+th,td{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 3px;
+    border-style: outset;
+    border-color: lightgray;
+}
+
+th:hover ,td:hover{
+    border-color: black;
+}
+
+th {
+    background-color: blanchedalmond;
+
+}
+
+td {
+    background-color:beige;
+}
+
+b {
+    color:red;
+}

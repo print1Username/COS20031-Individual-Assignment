@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <title>Ask for AI</title>
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='icon.ico') }}">
+    </head>
+    <body>
+        <h1>Ask your question to Gemini AI:</h1>
+    
+        <br><br>
+
+        <form method="post">
+            <label for="question">Your Question: </label>
+            <input type="text" id="question_ai" name="question_ai" placeholder="Ask your question"/>
+            <br><br>
+            <input type="Submit" value="submit"/>
+        </form>
+
+        <br><br>
+
+        <h2>Question:</h2>
+        <p>{{question_ai}}</p>
+        <br>
+        <h2>Answer:</h2>
+        <p>{{answer_ai}}</p>
+        <br><br>
+        <a href="home">Back to Home page</a>
+    </body>
+</html>
