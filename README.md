@@ -50,28 +50,28 @@ Windows PowerShell:
 
 ```powershell
 python -m venv .venv
-.\venv\Scripts\Activate.ps1
+.venv\Scripts\Activate.ps1
 ```
 
 Windows Command Prompt:
 
 ```bat
 python -m venv .venv
-venv\Scripts\activate
+.venv\Scripts\activate
 ```
 
 macOS or Linux:
 
 ```bash
 python3 -m venv .venv
-source venv/bin/activate
+source .venv/bin/activate
 ```
 
 ### 3. Install dependencies
 
 ```bash
 python -m pip install --upgrade pip
-python -m pip install Flask python-dotenv google-generativeai
+python -m pip install -r requirements.txt
 ```
 
 The current `requirements.txt` file is empty, so the packages above must be installed manually unless the dependency file is updated later.

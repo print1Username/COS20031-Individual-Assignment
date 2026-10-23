@@ -50,28 +50,28 @@ Windows PowerShell：
 
 ```powershell
 python -m venv .venv
-.\venv\Scripts\Activate.ps1
+.venv\Scripts\Activate.ps1
 ```
 
 Windows Command Prompt：
 
 ```bat
 python -m venv .venv
-venv\Scripts\activate
+.venv\Scripts\activate
 ```
 
 macOS 或 Linux：
 
 ```bash
 python3 -m venv .venv
-source venv/bin/activate
+source .venv/bin/activate
 ```
 
 ### 3. 安装依赖套件
 
 ```bash
 python -m pip install --upgrade pip
-python -m pip install Flask python-dotenv google-generativeai
+python -m pip install -r requirements.txt
 ```
 
 目前 `requirements.txt` 是空的，因此需要手动安装以上套件，除非之后补充依赖文件。
