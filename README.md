@@ -56,14 +56,14 @@ python -m venv venv
 Windows Command Prompt:
 
 ```bat
-python -m venv venv
+python -m venv .venv
 venv\Scripts\activate
 ```
 
 macOS or Linux:
 
 ```bash
-python3 -m venv venv
+python3 -m venv .venv
 source venv/bin/activate
 ```
 
